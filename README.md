@@ -1,3 +1,5 @@
+# Nota: El archivo que contiene las respuestas es 'Answers.md'.
+
 # Escuela Colombiana de Ingeniería Julio Garavito
 ## Arquitectura de Software – ARSW
 ### Laboratorio – Parte 2: BluePrints API con Seguridad JWT (OAuth 2.0)
