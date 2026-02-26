@@ -47,5 +47,13 @@ docker compose up -d
 
 De esta forma, se usa el archivo `docker-compose.yml`para levantar el contenedor de Docker que nos ayudara a persistir los datos en una PostgreSQL, tal como se explica en [Lab4_ARSW_BluePrint_Part1](https://github.com/Sebastian-villarraga/LAB04_ARSW_26)
 
+### **2. Inclusión de seguridad**
+En esta sección se detalla la arquitectura de seguridad implementada mediante **Spring Security**, actuando como un **OAuth2 Resource Server** que valida tokens **JWT** (JSON Web Tokens) para proteger los recursos de la API de Blueprints.
+...
 
+#### **Configuración de Permisos.**
+... (Explicar quien puede hacer cada cosa dentro de la API)
+
+### **3. Manejo de Excepciones de Seguridad**
+...
 
