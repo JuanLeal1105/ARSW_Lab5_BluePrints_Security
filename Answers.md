@@ -45,8 +45,7 @@ Para la correcta ejecución de este lab es preciso ejectuar el siguiente comando
 docker compose up -d
 ```
 
-De esta forma, se usa el archivo `docker-compose.yml`para levantar el contenedor de Docker que nos ayudara a persistir los datos en una PostgreSQL, tal como se explica en [Lab4_ARSW_BluePrint_Part1]([https://github.com/tu-usuario/tu-repo](https://github.com/Sebastian-villarraga/LAB04_ARSW_26))
-
+De esta forma, se usa el archivo `docker-compose.yml`para levantar el contenedor de Docker que nos ayudara a persistir los datos en una PostgreSQL, tal como se explica en [Lab4_ARSW_BluePrint_Part1](https://github.com/Sebastian-villarraga/LAB04_ARSW_26)
 
 
 
