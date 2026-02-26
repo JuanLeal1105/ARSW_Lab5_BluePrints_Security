@@ -1,0 +1,19 @@
+package co.edu.eci.blueprints.filters;
+
+import edu.eci.arsw.blueprints.model.Blueprint;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
+
+/**
+ * Default filter: returns the blueprint unchanged.
+ * Active only when no specific filter profile is enabled.
+ */
+@Component
+@Profile("!redundancy & !undersampling")
+public class IdentityFilter implements BlueprintsFilter {
+
+    @Override
+    public Blueprint apply(Blueprint bp) {
+        return bp;
+    }
+}
