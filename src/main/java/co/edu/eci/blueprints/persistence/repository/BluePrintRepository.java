@@ -1,6 +1,6 @@
 package co.edu.eci.blueprints.persistence.repository;
 
-import edu.eci.arsw.blueprints.persistence.entity.BluePrintEntity;
+import co.edu.eci.blueprints.persistence.entity.BluePrintEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

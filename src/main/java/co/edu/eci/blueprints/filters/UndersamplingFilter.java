@@ -1,7 +1,7 @@
 package co.edu.eci.blueprints.filters;
 
-import edu.eci.arsw.blueprints.model.Blueprint;
-import edu.eci.arsw.blueprints.model.Point;
+import co.edu.eci.blueprints.model.Blueprint;
+import co.edu.eci.blueprints.model.Point;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 

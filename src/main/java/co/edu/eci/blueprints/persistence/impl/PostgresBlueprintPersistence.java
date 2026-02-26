@@ -1,13 +1,13 @@
 package co.edu.eci.blueprints.persistence.impl;
 
-import edu.eci.arsw.blueprints.model.Blueprint;
-import edu.eci.arsw.blueprints.model.Point;
-import edu.eci.arsw.blueprints.persistence.BlueprintNotFoundException;
-import edu.eci.arsw.blueprints.persistence.BlueprintPersistence;
-import edu.eci.arsw.blueprints.persistence.BlueprintPersistenceException;
-import edu.eci.arsw.blueprints.persistence.entity.BluePrintEntity;
-import edu.eci.arsw.blueprints.persistence.entity.PointEntity;
-import edu.eci.arsw.blueprints.persistence.repository.BluePrintRepository;
+import co.edu.eci.blueprints.model.Blueprint;
+import co.edu.eci.blueprints.model.Point;
+import co.edu.eci.blueprints.persistence.BlueprintNotFoundException;
+import co.edu.eci.blueprints.persistence.BlueprintPersistence;
+import co.edu.eci.blueprints.persistence.BlueprintPersistenceException;
+import co.edu.eci.blueprints.persistence.entity.BluePrintEntity;
+import co.edu.eci.blueprints.persistence.entity.PointEntity;
+import co.edu.eci.blueprints.persistence.repository.BluePrintRepository;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 

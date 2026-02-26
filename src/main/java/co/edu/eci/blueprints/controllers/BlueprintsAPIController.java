@@ -1,8 +1,8 @@
 package co.edu.eci.blueprints.controllers;
 
-import edu.eci.arsw.blueprints.model.Blueprint;
-import edu.eci.arsw.blueprints.model.Point;
-import edu.eci.arsw.blueprints.services.BlueprintsServices;
+import co.edu.eci.blueprints.model.Blueprint;
+import co.edu.eci.blueprints.model.Point;
+import co.edu.eci.blueprints.services.BlueprintsServices;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Schema;

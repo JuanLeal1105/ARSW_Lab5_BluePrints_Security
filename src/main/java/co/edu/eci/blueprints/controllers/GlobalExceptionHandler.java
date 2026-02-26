@@ -1,7 +1,7 @@
 package co.edu.eci.blueprints.controllers;
 
-import edu.eci.arsw.blueprints.persistence.BlueprintNotFoundException;
-import edu.eci.arsw.blueprints.persistence.BlueprintPersistenceException;
+import co.edu.eci.blueprints.persistence.BlueprintNotFoundException;
+import co.edu.eci.blueprints.persistence.BlueprintPersistenceException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
