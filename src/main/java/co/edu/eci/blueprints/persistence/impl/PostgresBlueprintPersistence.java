@@ -103,6 +103,15 @@ public class PostgresBlueprintPersistence implements BlueprintPersistence {
         repository.save(entity);
     }
 
+    @Override
+    public void deleteBlueprint(String author, String name) throws BlueprintNotFoundException {
+        BluePrintEntity entity = repository.findByAuthorAndName(author, name)
+                .orElseThrow(() ->
+                        new BlueprintNotFoundException("Blueprint not found to delete: " + author + "/" + name));
+
+        repository.delete(entity);
+    }
+
     // ================================
     // MAPPER ENTITY -> MODEL
     // ================================

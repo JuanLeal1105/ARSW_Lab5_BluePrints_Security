@@ -135,6 +135,29 @@ public class BlueprintsAPIController {
                 .body(new ApiResponseWrapper<>(202, "Point added successfully", null));
     }
 
+    @Operation(
+            summary = "Delete a specific blueprint",
+            description = "Deletes a blueprint identified by its author and name."
+    )
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", description = "Blueprint deleted successfully"),
+            @ApiResponse(responseCode = "404", description = "Blueprint not found")
+    })
+    @DeleteMapping("/{author}/{blueprintName}")
+    public ResponseEntity<ApiResponseWrapper<Void>> deleteBlueprint(
+            @Parameter(description = "Author of the blueprint", example = "john")
+            @PathVariable String author,
+
+            @Parameter(description = "Name of the blueprint", example = "house")
+            @PathVariable String blueprintName) {
+
+        services.deleteBlueprint(author, blueprintName);
+
+        return ResponseEntity.ok(
+                new ApiResponseWrapper<>(200, "Blueprint deleted successfully", null)
+        );
+    }
+
     public record NewBlueprintRequest(
 
             @Schema(description = "Author of the blueprint", example = "john")

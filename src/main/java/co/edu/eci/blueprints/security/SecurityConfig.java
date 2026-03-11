@@ -51,6 +51,8 @@ public class SecurityConfig {
                         .hasAuthority("SCOPE_blueprints.create")
                         .requestMatchers(HttpMethod.PUT, "/api/v1/**")
                         .hasAnyAuthority("SCOPE_blueprints.update", "SCOPE_blueprints.write")
+                        .requestMatchers(HttpMethod.DELETE, "/api/v1/**")
+                        .hasAuthority("SCOPE_blueprints.create")
 
                         .anyRequest().authenticated()
                 )
