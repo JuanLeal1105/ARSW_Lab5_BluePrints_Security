@@ -15,6 +15,7 @@ public class InMemoryUserService {
             "student", encoder.encode("student123"),
             "assistant", encoder.encode("assistant123")
                 , "admin", encoder.encode("admin123")
+                , "admin2", encoder.encode("admin123")
         );
     }
 
@@ -25,7 +26,7 @@ public class InMemoryUserService {
 
     public String getScopeByUsername (String userCase){
         switch (userCase){
-            case "admin":
+            case "admin", "admin2":
                 return "blueprints.read blueprints.write blueprints.create blueprints.update";
             case "student":
                 return "blueprints.read";
